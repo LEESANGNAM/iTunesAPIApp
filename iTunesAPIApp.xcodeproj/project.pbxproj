@@ -9,21 +9,32 @@
 /* Begin PBXBuildFile section */
 		D6CAD1D32AF937DC0056F56A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1D22AF937DC0056F56A /* AppDelegate.swift */; };
 		D6CAD1D52AF937DC0056F56A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1D42AF937DC0056F56A /* SceneDelegate.swift */; };
-		D6CAD1D72AF937DC0056F56A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1D62AF937DC0056F56A /* ViewController.swift */; };
-		D6CAD1DA2AF937DC0056F56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CAD1D82AF937DC0056F56A /* Main.storyboard */; };
+		D6CAD1D72AF937DC0056F56A /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1D62AF937DC0056F56A /* TabbarController.swift */; };
 		D6CAD1DC2AF937DD0056F56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CAD1DB2AF937DD0056F56A /* Assets.xcassets */; };
 		D6CAD1DF2AF937DD0056F56A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CAD1DD2AF937DD0056F56A /* LaunchScreen.storyboard */; };
+		D6CAD1E82AF93B920056F56A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D6CAD1E72AF93B920056F56A /* RxCocoa */; };
+		D6CAD1EA2AF93B920056F56A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D6CAD1E92AF93B920056F56A /* RxRelay */; };
+		D6CAD1EC2AF93B920056F56A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D6CAD1EB2AF93B920056F56A /* RxSwift */; };
+		D6CAD1EF2AF93BB60056F56A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D6CAD1EE2AF93BB60056F56A /* SnapKit */; };
+		D6CAD1F22AF93BD00056F56A /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D6CAD1F12AF93BD00056F56A /* Toast */; };
+		D6CAD1F62AF93CEF0056F56A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1F42AF93CEF0056F56A /* SearchViewController.swift */; };
+		D6CAD1F72AF93CEF0056F56A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1F52AF93CEF0056F56A /* SearchTableViewCell.swift */; };
+		D6CAD1FE2AF93D250056F56A /* APISampleCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1FA2AF93D250056F56A /* APISampleCode.swift */; };
+		D6CAD1FF2AF93D250056F56A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD1FB2AF93D250056F56A /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6CAD1CF2AF937DC0056F56A /* iTunesAPIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesAPIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CAD1D22AF937DC0056F56A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6CAD1D42AF937DC0056F56A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6CAD1D62AF937DC0056F56A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D6CAD1D92AF937DC0056F56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6CAD1D62AF937DC0056F56A /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		D6CAD1DB2AF937DD0056F56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6CAD1DE2AF937DD0056F56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6CAD1E02AF937DD0056F56A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CAD1F42AF93CEF0056F56A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D6CAD1F52AF93CEF0056F56A /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		D6CAD1FA2AF93D250056F56A /* APISampleCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISampleCode.swift; sourceTree = "<group>"; };
+		D6CAD1FB2AF93D250056F56A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CAD1EC2AF93B920056F56A /* RxSwift in Frameworks */,
+				D6CAD1EF2AF93BB60056F56A /* SnapKit in Frameworks */,
+				D6CAD1EA2AF93B920056F56A /* RxRelay in Frameworks */,
+				D6CAD1F22AF93BD00056F56A /* Toast in Frameworks */,
+				D6CAD1E82AF93B920056F56A /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,42 @@
 		D6CAD1D12AF937DC0056F56A /* iTunesAPIApp */ = {
 			isa = PBXGroup;
 			children = (
+				D6CAD2012AF944D50056F56A /* Component */,
+				D6CAD1F92AF93D250056F56A /* NetWork */,
+				D6CAD1F32AF93CDA0056F56A /* Search */,
 				D6CAD1D22AF937DC0056F56A /* AppDelegate.swift */,
 				D6CAD1D42AF937DC0056F56A /* SceneDelegate.swift */,
-				D6CAD1D62AF937DC0056F56A /* ViewController.swift */,
-				D6CAD1D82AF937DC0056F56A /* Main.storyboard */,
+				D6CAD1D62AF937DC0056F56A /* TabbarController.swift */,
 				D6CAD1DB2AF937DD0056F56A /* Assets.xcassets */,
 				D6CAD1DD2AF937DD0056F56A /* LaunchScreen.storyboard */,
 				D6CAD1E02AF937DD0056F56A /* Info.plist */,
 			);
 			path = iTunesAPIApp;
+			sourceTree = "<group>";
+		};
+		D6CAD1F32AF93CDA0056F56A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D6CAD1F52AF93CEF0056F56A /* SearchTableViewCell.swift */,
+				D6CAD1F42AF93CEF0056F56A /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D6CAD1F92AF93D250056F56A /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				D6CAD1FA2AF93D250056F56A /* APISampleCode.swift */,
+				D6CAD1FB2AF93D250056F56A /* APIManager.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		D6CAD2012AF944D50056F56A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,13 @@
 			dependencies = (
 			);
 			name = iTunesAPIApp;
+			packageProductDependencies = (
+				D6CAD1E72AF93B920056F56A /* RxCocoa */,
+				D6CAD1E92AF93B920056F56A /* RxRelay */,
+				D6CAD1EB2AF93B920056F56A /* RxSwift */,
+				D6CAD1EE2AF93BB60056F56A /* SnapKit */,
+				D6CAD1F12AF93BD00056F56A /* Toast */,
+			);
 			productName = iTunesAPIApp;
 			productReference = D6CAD1CF2AF937DC0056F56A /* iTunesAPIApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +161,11 @@
 				Base,
 			);
 			mainGroup = D6CAD1C62AF937DC0056F56A;
+			packageReferences = (
+				D6CAD1E62AF93B920056F56A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D6CAD1ED2AF93BB60056F56A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D6CAD1F02AF93BD00056F56A /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = D6CAD1D02AF937DC0056F56A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +182,6 @@
 			files = (
 				D6CAD1DF2AF937DD0056F56A /* LaunchScreen.storyboard in Resources */,
 				D6CAD1DC2AF937DD0056F56A /* Assets.xcassets in Resources */,
-				D6CAD1DA2AF937DC0056F56A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +192,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CAD1D72AF937DC0056F56A /* ViewController.swift in Sources */,
+				D6CAD1FF2AF93D250056F56A /* APIManager.swift in Sources */,
+				D6CAD1FE2AF93D250056F56A /* APISampleCode.swift in Sources */,
+				D6CAD1D72AF937DC0056F56A /* TabbarController.swift in Sources */,
 				D6CAD1D32AF937DC0056F56A /* AppDelegate.swift in Sources */,
+				D6CAD1F62AF93CEF0056F56A /* SearchViewController.swift in Sources */,
 				D6CAD1D52AF937DC0056F56A /* SceneDelegate.swift in Sources */,
+				D6CAD1F72AF93CEF0056F56A /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D6CAD1D82AF937DC0056F56A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D6CAD1D92AF937DC0056F56A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D6CAD1DD2AF937DD0056F56A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +342,6 @@
 				INFOPLIST_FILE = iTunesAPIApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +369,6 @@
 				INFOPLIST_FILE = iTunesAPIApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +406,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6CAD1E62AF93B920056F56A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		D6CAD1ED2AF93BB60056F56A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		D6CAD1F02AF93BD00056F56A /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6CAD1E72AF93B920056F56A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6CAD1E62AF93B920056F56A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D6CAD1E92AF93B920056F56A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6CAD1E62AF93B920056F56A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D6CAD1EB2AF93B920056F56A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6CAD1E62AF93B920056F56A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D6CAD1EE2AF93BB60056F56A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6CAD1ED2AF93BB60056F56A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D6CAD1F12AF93BD00056F56A /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6CAD1F02AF93BD00056F56A /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6CAD1C72AF937DC0056F56A /* Project object */;
 }
