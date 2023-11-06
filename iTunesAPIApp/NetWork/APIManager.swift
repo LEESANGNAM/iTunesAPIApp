@@ -23,7 +23,7 @@ class ApIMAnager {
         
         return Observable<SearchAppModel>.create { value in
             
-            let urlString = "https://itunes.apple.com/search?term=\(text)&country=KR&media=software&lang=ko_KR&limit=200"
+            let urlString = "https://itunes.apple.com/search?term=\(text)&country=KR&media=software&lang=ko_KR&limit=30"
             
             guard let url = URL(string: urlString) else {
                 value.onError(NetWorkError.invalidURL)

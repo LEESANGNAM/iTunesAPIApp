@@ -193,9 +193,6 @@ extension SearchTableViewCell {
         }
     }
     private func setScreenShotImageView(){
-//        contentView.addSubview(firstScreenShotImageView)
-//        contentView.addSubview(secondScreenShotImageView)
-//        contentView.addSubview(thirdScreenShotImageView)
         contentView.addSubview(imageStackView)
         imageStackView.snp.makeConstraints { make in
             make.leading.equalTo(appIconImageView.snp.leading)
@@ -206,24 +203,14 @@ extension SearchTableViewCell {
         firstScreenShotImageView.snp.makeConstraints { make in
             make.width.equalToSuperview().multipliedBy(0.32)
             make.height.equalTo(firstScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
-//            make.leading.equalTo(appIconImageView.snp.leading)
-//            make.top.equalTo(ratingStarImageView.snp.bottom).offset(10)
-//            make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-10)
         }
         secondScreenShotImageView.snp.makeConstraints { make in
             make.width.equalToSuperview().multipliedBy(0.32)
             make.height.equalTo(secondScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
-//            make.leading.equalTo(firstScreenShotImageView.snp.trailing).offset(10)
-//            make.top.equalTo(firstScreenShotImageView.snp.top)
-//            make.bottom.equalTo(firstScreenShotImageView.snp.bottom)
         }
         thirdScreenShotImageView.snp.makeConstraints { make in
             make.width.equalToSuperview().multipliedBy(0.32)
             make.height.equalTo(thirdScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
-//            make.leading.equalTo(firstScreenShotImageView.snp.trailing).offset(10)
-//            make.trailing.equalTo(downloadButton.snp.trailing)
-//            make.top.equalTo(firstScreenShotImageView.snp.top)
-//            make.bottom.equalTo(firstScreenShotImageView.snp.bottom)
         }
         
     }
@@ -244,7 +231,7 @@ extension SearchTableViewCell {
                 self?.appIconImageView.image = iconIamge
                 self?.firstScreenShotImageView.image = images?[0]
                 self?.secondScreenShotImageView.image = images?[1]
-                self?.thirdScreenShotImageView.image = images?[2]
+                self?.thirdScreenShotImageView.image = images?[2] // 두개만 있는경우도 있음 처리해야함
             }
         }
         
