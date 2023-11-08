@@ -142,7 +142,7 @@ extension SearchTableViewCell {
     private func setAppIconImageView(){
         contentView.addSubview(appIconImageView)
         appIconImageView.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide).offset(20)
+            $0.top.equalTo(self.safeAreaLayoutGuide).offset(10)
             $0.leading.equalTo(20)
             $0.size.equalTo(60)
         }
@@ -164,7 +164,7 @@ extension SearchTableViewCell {
         ratingStarImageView.snp.makeConstraints { make in
             make.size.equalTo(20)
             make.leading.equalTo(appIconImageView.snp.leading)
-            make.top.equalTo(appIconImageView.snp.bottom).offset(10)
+            make.top.equalTo(appIconImageView.snp.bottom).offset(5)
         }
         ratingLabel.snp.makeConstraints { make in
             make.leading.equalTo(ratingStarImageView.snp.trailing).offset(8)
@@ -197,20 +197,20 @@ extension SearchTableViewCell {
         imageStackView.snp.makeConstraints { make in
             make.leading.equalTo(appIconImageView.snp.leading)
             make.trailing.equalTo(downloadButton.snp.trailing)
-            make.top.equalTo(ratingStarImageView.snp.bottom).offset(10)
-            make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-10)
+            make.top.equalTo(ratingStarImageView.snp.bottom).offset(5)
+            make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-5)
         }
         firstScreenShotImageView.snp.makeConstraints { make in
             make.width.equalToSuperview().multipliedBy(0.32)
-            make.height.equalTo(firstScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
+//            make.height.equalTo(firstScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
         }
         secondScreenShotImageView.snp.makeConstraints { make in
             make.width.equalToSuperview().multipliedBy(0.32)
-            make.height.equalTo(secondScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
+//            make.height.equalTo(secondScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
         }
         thirdScreenShotImageView.snp.makeConstraints { make in
             make.width.equalToSuperview().multipliedBy(0.32)
-            make.height.equalTo(thirdScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
+//            make.height.equalTo(thirdScreenShotImageView.snp.width).multipliedBy(5.0/3.0)
         }
         
     }
