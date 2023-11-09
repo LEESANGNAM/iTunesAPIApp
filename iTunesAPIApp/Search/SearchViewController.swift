@@ -74,8 +74,10 @@ class SearchViewController: UIViewController {
         
         output.model
             .bind(with: self) { owner, model in
-                print("화면넘기기전에 값을넘겨보자",model)
-                owner.navigationController?.pushViewController(DetailViewContoller(), animated: true)
+                let vc = DetailViewContoller()
+                vc.detailData = model
+                owner.navigationController?.pushViewController(vc, animated: true)
+                
             }.disposed(by: disposeBag)
         
         

@@ -12,7 +12,6 @@ class DetailView: UIView {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.backgroundColor = .systemBlue
         imageView.layer.cornerRadius = 15
         return imageView
     }()
@@ -94,10 +93,10 @@ class DetailView: UIView {
     
     let scrollView = {
         let scrollView = UIScrollView()
-        scrollView.backgroundColor = .systemYellow
-//        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
         return scrollView
     }()
+    
     let contentView = UIView()
     lazy var contentList: [UIView] = [ appIconImageView, appNameLabel, sellerNameLabel, downloadButton,
                                        releaseTitleLabel,versionLabel,releaseNotesLabel,
@@ -135,7 +134,6 @@ extension DetailView {
     }
     private func setContentView(){
         scrollView.addSubview(contentView)
-        contentView.backgroundColor = .brown
         contentView.snp.makeConstraints { make in
             make.edges.width.equalTo(scrollView).inset(20)
             

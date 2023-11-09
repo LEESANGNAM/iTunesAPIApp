@@ -26,6 +26,7 @@
 		D6CAD21A2AFBE1920056F56A /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = D6CAD2192AFBE1920056F56A /* RxDataSources */; };
 		D6CAD21D2AFBEAD00056F56A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD21C2AFBEAD00056F56A /* DetailView.swift */; };
 		D6CAD21F2AFBEADB0056F56A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */; };
+		D6EEA68E2AFD051B002B5C3F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D6CAD2162AFBDE840056F56A /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		D6CAD21C2AFBEAD00056F56A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				D6CAD21C2AFBEAD00056F56A /* DetailView.swift */,
 				D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */,
+				D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				D6CAD21D2AFBEAD00056F56A /* DetailView.swift in Sources */,
 				D6CAD1D72AF937DC0056F56A /* TabbarController.swift in Sources */,
 				D6CAD1D32AF937DC0056F56A /* AppDelegate.swift in Sources */,
+				D6EEA68E2AFD051B002B5C3F /* DetailViewModel.swift in Sources */,
 				D6CAD1F62AF93CEF0056F56A /* SearchViewController.swift in Sources */,
 				D6CAD1D52AF937DC0056F56A /* SceneDelegate.swift in Sources */,
 				D6CAD1F72AF93CEF0056F56A /* SearchTableViewCell.swift in Sources */,
