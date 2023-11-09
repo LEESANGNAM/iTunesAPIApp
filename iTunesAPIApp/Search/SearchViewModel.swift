@@ -17,7 +17,7 @@ class SearchViewModel: ViewModelType {
     }
     
     struct Output {
-        var items: Observable<Array<AppInfo>>
+        var items: Observable<[ITunesModel]>
         var model: Observable<AppInfo>
         
     }
@@ -27,7 +27,7 @@ class SearchViewModel: ViewModelType {
     
     
     func transform(input: Input) -> Output {
-        let items = PublishSubject<[AppInfo]>()
+        let items = PublishSubject<[ITunesModel]>()
         let text = input.text
             .debounce(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
@@ -36,7 +36,8 @@ class SearchViewModel: ViewModelType {
             let request = ApIMAnager.fetchData(text: query)
             
             let _ = request.subscribe(with: self) { owner, result in
-                items.onNext(result.results)
+                let iTunesModel = ITunesModel(items: result.results)
+                items.onNext([iTunesModel])
             } onError: { owner, error in
                 print(error)
             }

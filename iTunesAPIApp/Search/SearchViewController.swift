@@ -16,7 +16,7 @@ struct ITunesModel {
 }
 extension ITunesModel: SectionModelType {
     typealias Item = AppInfo
-    init(original: ITunesModel, items: [Item]) {
+    init(original: ITunesModel, items: [AppInfo]) {
         self = original
         self.items = items
     }
@@ -35,10 +35,10 @@ class SearchViewController: UIViewController {
     
     let searchBar = UISearchBar()
     
-    var data: [AppInfo] = []
-    
-    lazy var items = BehaviorSubject(value: data)
-    lazy var text = BehaviorRelay(value: "")
+//    var data: [AppInfo] = []
+//
+//    lazy var items = BehaviorSubject(value: data)
+//    lazy var text = BehaviorRelay(value: "")
     let viewModel = SearchViewModel()
     let disposeBag = DisposeBag()
     
@@ -66,9 +66,7 @@ class SearchViewController: UIViewController {
         })
         
         output.items
-            .bind(to: tableView.rx.items(cellIdentifier: SearchTableViewCell.identifier, cellType: SearchTableViewCell.self)) { (row, element, cell) in
-                cell.setData(app: element)
-            }
+            .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
         
         

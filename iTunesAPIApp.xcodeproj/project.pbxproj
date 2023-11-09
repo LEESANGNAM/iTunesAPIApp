@@ -28,6 +28,7 @@
 		D6CAD21F2AFBEADB0056F56A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */; };
 		D6EEA68E2AFD051B002B5C3F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */; };
 		D6EEA6902AFD51A0002B5C3F /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA68F2AFD51A0002B5C3F /* DetailCollectionViewCell.swift */; };
+		D6EEA6942AFD5579002B5C3F /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA6932AFD5579002B5C3F /* ReusableProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		D6EEA68F2AFD51A0002B5C3F /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		D6EEA6932AFD5579002B5C3F /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				D6CAD2162AFBDE840056F56A /* ViewModelType.swift */,
+				D6EEA6932AFD5579002B5C3F /* ReusableProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				D6CAD21D2AFBEAD00056F56A /* DetailView.swift in Sources */,
 				D6CAD1D72AF937DC0056F56A /* TabbarController.swift in Sources */,
 				D6CAD1D32AF937DC0056F56A /* AppDelegate.swift in Sources */,
+				D6EEA6942AFD5579002B5C3F /* ReusableProtocol.swift in Sources */,
 				D6EEA68E2AFD051B002B5C3F /* DetailViewModel.swift in Sources */,
 				D6CAD1F62AF93CEF0056F56A /* SearchViewController.swift in Sources */,
 				D6CAD1D52AF937DC0056F56A /* SceneDelegate.swift in Sources */,

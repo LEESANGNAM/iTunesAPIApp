@@ -12,7 +12,6 @@ import RxCocoa
 
 final class SearchTableViewCell: UITableViewCell {
     
-    static let identifier = "SearchTableViewCell"
     
     let appNameLabel: UILabel = {
         let label = UILabel()
