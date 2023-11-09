@@ -27,6 +27,7 @@
 		D6CAD21D2AFBEAD00056F56A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD21C2AFBEAD00056F56A /* DetailView.swift */; };
 		D6CAD21F2AFBEADB0056F56A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */; };
 		D6EEA68E2AFD051B002B5C3F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */; };
+		D6EEA6902AFD51A0002B5C3F /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA68F2AFD51A0002B5C3F /* DetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D6CAD21C2AFBEAD00056F56A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D6EEA68F2AFD51A0002B5C3F /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				D6CAD21C2AFBEAD00056F56A /* DetailView.swift */,
 				D6CAD21E2AFBEADB0056F56A /* DetailViewController.swift */,
 				D6EEA68D2AFD051B002B5C3F /* DetailViewModel.swift */,
+				D6EEA68F2AFD51A0002B5C3F /* DetailCollectionViewCell.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6CAD21F2AFBEADB0056F56A /* DetailViewController.swift in Sources */,
+				D6EEA6902AFD51A0002B5C3F /* DetailCollectionViewCell.swift in Sources */,
 				D6CAD1FF2AF93D250056F56A /* APIManager.swift in Sources */,
 				D6CAD1FE2AF93D250056F56A /* ItunesModel.swift in Sources */,
 				D6CAD20A2AFAA3900056F56A /* SearchViewModel.swift in Sources */,

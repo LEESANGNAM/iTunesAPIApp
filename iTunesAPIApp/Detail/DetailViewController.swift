@@ -8,6 +8,19 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
+
+struct ScreenShotImageModel {
+    var header: String
+    var items: [Item]
+}
+extension ScreenShotImageModel: SectionModelType {
+    typealias Item = UIImage
+    init(original: ScreenShotImageModel, items: [Item]) {
+        self = original
+        self.items = items
+    }
+}
 
 class DetailViewContoller: UIViewController{
     

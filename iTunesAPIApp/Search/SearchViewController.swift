@@ -11,11 +11,12 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-struct ITunesModel: SectionModelType {
-    var items: [AppInfo]
+struct ITunesModel {
+    var items: [Item]
 }
-extension ITunesModel {
-    init(original: ITunesModel, items: [AppInfo]) {
+extension ITunesModel: SectionModelType {
+    typealias Item = AppInfo
+    init(original: ITunesModel, items: [Item]) {
         self = original
         self.items = items
     }
