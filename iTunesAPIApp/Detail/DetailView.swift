@@ -73,12 +73,12 @@ class DetailView: UIView {
     let collectionView = {
         
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical // 수직 스크롤
+        layout.scrollDirection = .horizontal // 수직 스크롤
         layout.minimumInteritemSpacing = 10 // 아이템 간의 최소 간격
         layout.minimumLineSpacing = 10 // 라인(행) 간의 최소 간격
         
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = .systemPink
+        collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
     
@@ -202,12 +202,13 @@ extension DetailView {
         }
     }
     private func setCollectionView(){
+        collectionView.register(DetailCollectionViewCell.self, forCellWithReuseIdentifier: DetailCollectionViewCell.identifier)
         collectionView.snp.makeConstraints { make in
-            make.height.equalTo(self.safeAreaLayoutGuide).multipliedBy(0.7)
+            make.height.equalTo(self.safeAreaLayoutGuide).multipliedBy(0.8)
             make.top.equalTo(releaseNotesLabel.snp.bottom).offset(30)
             make.width.equalTo(self.safeAreaLayoutGuide)
             
-            make.leading.equalTo(contentView.snp.leading)
+            make.trailing.leading.equalTo(self.safeAreaLayoutGuide)
         }
     }
     
