@@ -24,8 +24,8 @@ class ApIMAnager {
         return Observable<SearchAppModel>.create { value in
             
             let urlString = "https://itunes.apple.com/search?term=\(text)&country=KR&media=software&limit=30"
-            
-            guard let url = URL(string: urlString) else {
+            let encodeStr = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+            guard let url = URL(string: encodeStr) else {
                 value.onError(NetWorkError.invalidURL)
                 return Disposables.create()
             }

@@ -33,7 +33,7 @@ final class SearchTableViewCell: UITableViewCell {
         button.setTitle("받기", for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
         button.isUserInteractionEnabled = true
-        button.backgroundColor = .lightGray
+        button.backgroundColor = .systemGray5
         button.layer.cornerRadius = 16
         return button
     }()
